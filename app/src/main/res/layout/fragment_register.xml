@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.Register"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:stretchColumns="3"
+            android:background="@color/colorBackground"
+            android:orientation="vertical"
+            android:paddingBottom="35dp">
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/username_text"/>
+                <EditText
+                    android:id="@+id/register_username_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:inputType="textPersonName"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/password_text"/>
+                <EditText
+                    android:id="@+id/register_password_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:inputType="textPassword"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/first_name_text"/>
+                <EditText
+                    android:id="@+id/register_first_name_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/last_name_text"/>
+                <EditText
+                    android:id="@+id/register_last_name_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/register_picture_text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/photo_text"
+                    android:layout_margin="5dp"/>
+
+                <ImageButton
+                    android:id="@+id/register_profile_pic_placeholder"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:src="@drawable/ic_add_image"
+                    android:background="@color/colorSecondaryDark"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/register_picture_text"
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:elevation="5dp"/>
+
+                <Button
+                    android:id="@+id/register_submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_button"
+                    android:background="@color/colorSecondary"
+                    android:textColor="@color/textOnPrimary"
+                    android:layout_below="@id/register_profile_pic_placeholder"
+                    android:layout_margin="5dp"
+                    android:elevation="10dp"/>
+
+            </RelativeLayout>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Twitter</string>
+    <string name="main_image_description">Login\_or\_Sign-up\_page\'s\_main\_header\_image</string>
+
+    <string name="login_text">Login</string>
+    <string name="register_text">Register</string>
+
+    <string name="username_text">Username:</string>
+    <string name="password_text">Password:</string>
+
+    <string name="first_name_text">First\ name:</string>
+    <string name="last_name_text">Last\ name:</string>
+    <string name="name_text">Your\ name</string>
+    <string name="photo_text">Profile\ picture:</string>
+
+    <string name="submit_button">submit</string>
+
+    <string name="home_text">Home</string>
+
+    <string name="feed_text">Feed</string>
+    <string name="story_text">Story</string>
+    <string name="following_text">You\nFollow</string>
+    <string name="followers_text">Follows\nYou</string>
+
+    <string name="post_text_placeholder">Insert\ post\ here...</string>
+
+    <string name="post_confirmation">Post\ submitted\ successfully!</string>
+
+    <string name="logout_button">Logout</string>
+    <string name="user_profile_button">Profile</string>
+
+    <string name="follow_text">You\ are\ now\ following\ this\ user!</string>
+    <string name="unfollow_text">You\ have\ now\ unfollowed\ this\ user!</string>
+
+    <string name="search_hint">Type\ \@username...</string>
+
+    <string name="mentions_text">Mentions:</string>
+
+
+</resources>

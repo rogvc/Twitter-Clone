@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/home_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimaryDark"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageButton
+        android:id="@+id/home_bar_profile_holder"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:srcCompat="@tools:sample/avatars[12]"
+        android:background="@color/lightTextOnBackground"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp" />
+
+
+    <TextView
+        android:id="@+id/home_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_text"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/textOnPrimary"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/home_bar_profile_holder"/>
+
+    <ImageButton
+        android:id="@+id/homebar_newpost_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_add_post"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ImageButton
+        android:id="@+id/homebar_search_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_search"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_toLeftOf="@id/homebar_newpost_button"/>
+
+
+</RelativeLayout>

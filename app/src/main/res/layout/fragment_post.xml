@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+
+    <ImageView
+        android:id="@+id/post_profile_holder"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:background="@color/lightTextOnBackground"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/post_name_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name goes here"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="@color/textOnBackground"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/post_profile_holder"/>
+
+    <TextView
+        android:id="@+id/post_handle_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@handle"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:textColor="@color/lightTextOnBackground"
+        android:layout_below="@id/post_name_holder"
+        android:layout_toRightOf="@+id/post_profile_holder"/>
+
+    <TextView
+        android:id="@+id/post_timestamp_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timestamp"
+        android:textSize="12dp"
+        android:textColor="@color/lightTextOnBackground"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/post_text_holder"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/post_profile_holder"
+        android:layout_toRightOf="@id/post_profile_holder"
+        android:text="Post goes here"
+        android:textColor="@color/textOnBackground"
+        android:textSize="18sp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/post_text_holder"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

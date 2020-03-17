@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:id="@+id/user_top"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@color/colorPrimaryDark" >
+
+
+        <ImageView
+            android:id="@+id/user_profile_pic_holder"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            tools:srcCompat="@tools:sample/avatars[12]"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@color/lightTextOnBackground"/>
+
+        <TextView
+            android:id="@+id/user_name_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_text"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/textOnPrimary"
+            android:layout_toRightOf="@id/user_profile_pic_holder"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/user_handle_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\@handle"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/textOnBackground"
+            android:layout_toRightOf="@id/user_profile_pic_holder"
+            android:layout_below="@id/user_name_placeholder"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/user_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_top"
+        app:tabBackground="@color/colorSecondary"
+        app:tabTextColor="@color/textOnPrimary"
+        android:elevation="2dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feed_text" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/story_text" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/following_text" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/followers_text" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/user_fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/user_tab_layout" >
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/user_follow_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_follow"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
