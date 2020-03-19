@@ -21,14 +21,17 @@ public class Model implements IModel {
     }
 
     public User login(String handle, String password) {
-        Map<String, User> userList = proxy.getUsers();
+
+        //TODO implement Lambda
+
+        /*Map<String, User> userList = proxy.getUsers();
 
         if (!userList.containsKey(handle)) {
             return null;
         } else if (userList.get(handle).getPassword().equals(password)) {
             presenter.onLoginSuccessful(proxy.login(handle));
             return proxy.login(handle);
-        }
+        }*/
 
         return null;
     }

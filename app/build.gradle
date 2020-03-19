@@ -34,4 +34,6 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.github.javafaker:javafaker:1.0.2'
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.0.0-alpha1'
+    implementation group: 'com.amazonaws', name: 'aws-lambda-java-core', version: '1.2.0'
+
 }

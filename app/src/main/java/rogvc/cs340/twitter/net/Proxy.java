@@ -77,16 +77,23 @@ public class Proxy {
 
     //login and Register
 
-    public User login(String handle) {
+    public User login(String handle, String password) {
 
-        return users.get(handle);
+        User temp = users.get(handle);
+
+        if (temp.getHandle().equals(handle) &&
+                temp.getPassword().equals(password)) {
+            return temp;
+        } else {
+            return null;
+        }
 
     }
 
     public User register(User userToAdd) {
 
         users.put(userToAdd.getHandle(), userToAdd);
-        return login(userToAdd.getHandle());
+        return login(userToAdd.getHandle(), userToAdd.getPassword());
 
     }
 

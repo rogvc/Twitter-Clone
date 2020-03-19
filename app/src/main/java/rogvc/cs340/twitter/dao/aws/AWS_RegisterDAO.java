@@ -1,9 +1,9 @@
-package rogvc.cs340.twitter.dao;
+package rogvc.cs340.twitter.dao.aws;
 
 import rogvc.cs340.twitter.service.request.RegisterRequest;
 import rogvc.cs340.twitter.service.response.LoginResponse;
 
-public class RegisterDAO implements I_DAO_Register{
+public class AWS_RegisterDAO implements I_DAO_Register{
 
     @Override
     public LoginResponse register(RegisterRequest request) {

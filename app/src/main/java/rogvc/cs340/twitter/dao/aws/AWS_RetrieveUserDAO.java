@@ -1,8 +1,8 @@
-package rogvc.cs340.twitter.dao;
+package rogvc.cs340.twitter.dao.aws;
 
 import rogvc.cs340.twitter.service.response.RetrieveUserResponse;
 
-public class RetrieveUserDAO implements I_DAO_RetrieveUser {
+public class AWS_RetrieveUserDAO implements I_DAO_RetrieveUser {
 
     @Override
     public RetrieveUserResponse retrieveUser(String handle) {
